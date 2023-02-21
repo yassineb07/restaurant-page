@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;1,400;1,500&display=swap');
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('./jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+  background-clip: padding-box;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Header Section */
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.header-title {
+  font-family: 'Shantell Sans', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 0.8rem;
+}
+.header-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+.header-nav-list li {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+main {
+  flex: 1;
+}
