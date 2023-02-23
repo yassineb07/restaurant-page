@@ -47,13 +47,16 @@ header {
   font-size: 1.5rem;
   font-weight: 500;
 }
+
+/* Main Section */
+
 main {
   flex: 1;
   color: white;
   text-align: center;
 }
 
-.about {
+.main-about {
   width: 30%;
   margin: 1rem auto;
   background-color: rgba(0, 0, 0, 0.7);
@@ -61,7 +64,7 @@ main {
   font-size: 1.2rem;
 }
 
-main span {
+.main-welcome {
   font-family: 'Shantell Sans', cursive;
   font-size: 4rem;
   font-weight: 700;
@@ -74,5 +77,6 @@ main span {
   background-color: #f97316;
   border: none;
   font-size: 1.2rem;
+  font-weight: 600;
   color: white;
 }
