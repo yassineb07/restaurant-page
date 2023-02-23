@@ -56,6 +56,13 @@ main {
   text-align: center;
 }
 
+.main-welcome {
+  font-family: 'Shantell Sans', cursive;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
 .main-about {
   width: 30%;
   margin: 1rem auto;
@@ -64,14 +71,7 @@ main {
   font-size: 1.2rem;
 }
 
-.main-welcome {
-  font-family: 'Shantell Sans', cursive;
-  font-size: 4rem;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
-}
-
-#order-btn {
+.order-btn {
   padding: 1.3rem 2.3rem;
   border-radius: 1rem;
   background-color: #f97316;

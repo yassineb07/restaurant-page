@@ -1,3 +1,5 @@
+import createHome from './home';
+
 function createTitle() {
   const title = document.createElement('div');
 
@@ -40,7 +42,7 @@ function createHeader() {
 
 function createMain() {
   const main = document.createElement('main');
-
+  main.append(createHome());
   return main;
 }
 
