@@ -7,8 +7,9 @@ function createHome() {
   const about = document.createElement('p');
   const order = document.createElement('button');
 
-  welcome.classList.add('main-welcome');
-  about.classList.add('main-about');
+  home.classList.add('home');
+  welcome.classList.add('home-welcome');
+  about.classList.add('home-about');
   order.classList.add('order-btn');
 
   welcome.textContent = 'Bienvenue';

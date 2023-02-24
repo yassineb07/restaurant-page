@@ -1,4 +1,5 @@
 import createHome from './home';
+import createMenu from './menu';
 
 function createTitle() {
   const title = document.createElement('div');
@@ -42,7 +43,8 @@ function createHeader() {
 
 function createMain() {
   const main = document.createElement('main');
-  main.append(createHome());
+  /* main.append(createHome()); */
+  main.append(createMenu());
   return main;
 }
 

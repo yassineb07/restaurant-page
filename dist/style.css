@@ -4,6 +4,7 @@
 :root {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  --shantell: 'Shantell Sans', cursive;
 }
 * {
   padding: 0;
@@ -30,7 +31,7 @@ header {
   border-bottom: 2px solid white;
 }
 .header-title {
-  font-family: 'Shantell Sans', cursive;
+  font-family: var(--shantell);
   font-size: 5rem;
   font-weight: 700;
   text-align: center;
@@ -52,18 +53,22 @@ header {
 
 main {
   flex: 1;
+}
+
+/* Home page */
+
+.home {
   color: white;
   text-align: center;
 }
-
-.main-welcome {
-  font-family: 'Shantell Sans', cursive;
+.home-welcome {
+  font-family: var(--shantell);
   font-size: 4rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
 }
 
-.main-about {
+.home-about {
   width: 30%;
   margin: 1rem auto;
   background-color: rgba(0, 0, 0, 0.7);
@@ -79,4 +84,44 @@ main {
   font-size: 1.2rem;
   font-weight: 600;
   color: white;
+}
+
+/* Menu page */
+
+.menu {
+  color: white;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.menu-title {
+  font-family: var(--shantell);
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.menu-items {
+  border: 3px white solid;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.item {
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  gap: 1rem;
+}
+
+.item:hover {
+  background-color: rgba(255, 255, 255, 0.144);
+  cursor: pointer;
+}
+.item-name div {
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
