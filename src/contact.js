@@ -81,4 +81,9 @@ function createContact() {
   return contact;
 }
 
-export default createContact;
+function loadContact() {
+  const main = document.getElementById('main');
+  main.textContent = '';
+  main.append(createContact());
+}
+export default loadContact;

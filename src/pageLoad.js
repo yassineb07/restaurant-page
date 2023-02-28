@@ -1,7 +1,3 @@
-import createHome from './home';
-import createMenu from './menu';
-import createContact from './contact';
-
 function createTitle() {
   const title = document.createElement('div');
 
@@ -13,22 +9,29 @@ function createTitle() {
 
 function createNav() {
   const nav = document.createElement('nav');
-  const ul = document.createElement('ul');
-  const liHome = document.createElement('li');
-  const liMenu = document.createElement('li');
-  const liContact = document.createElement('li');
+  const buttons = document.createElement('div');
+  const homeBtn = document.createElement('button');
+  const menuBtn = document.createElement('button');
+  const contactBtn = document.createElement('button');
 
   nav.classList.add('header-nav');
-  ul.classList.add('header-nav-list');
+  buttons.classList.add('header-buttons');
+  homeBtn.classList.add('nav-button');
+  menuBtn.classList.add('nav-button');
+  contactBtn.classList.add('nav-button');
 
-  liHome.textContent = 'Home';
-  liMenu.textContent = 'Menu';
-  liContact.textContent = 'Contact';
+  homeBtn.setAttribute('id', 'home');
+  menuBtn.setAttribute('id', 'menu');
+  contactBtn.setAttribute('id', 'contact');
 
-  ul.appendChild(liHome);
-  ul.appendChild(liMenu);
-  ul.appendChild(liContact);
-  nav.appendChild(ul);
+  homeBtn.textContent = 'Home';
+  menuBtn.textContent = 'Menu';
+  contactBtn.textContent = 'Contact';
+
+  buttons.appendChild(homeBtn);
+  buttons.appendChild(menuBtn);
+  buttons.appendChild(contactBtn);
+  nav.appendChild(buttons);
 
   return nav;
 }
@@ -44,18 +47,16 @@ function createHeader() {
 
 function createMain() {
   const main = document.createElement('main');
-  /* main.append(createHome()); */
-  /* main.append(createMenu()); */
-  main.append(createContact());
+  main.setAttribute('id', 'main');
 
   return main;
 }
 
-function renderPage() {
+function loadPage() {
   const content = document.getElementById('content');
 
   content.appendChild(createHeader());
   content.appendChild(createMain());
 }
 
-export default renderPage;
+export default loadPage;

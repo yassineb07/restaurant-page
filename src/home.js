@@ -23,4 +23,10 @@ function createHome() {
   return home;
 }
 
-export default createHome;
+function loadHome() {
+  const main = document.getElementById('main');
+  main.textContent = '';
+  main.append(createHome());
+}
+
+export default loadHome;

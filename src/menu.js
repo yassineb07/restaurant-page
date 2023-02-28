@@ -65,4 +65,9 @@ function createMenu() {
   return menu;
 }
 
-export default createMenu;
+function loadMenu() {
+  const main = document.getElementById('main');
+  main.textContent = '';
+  main.append(createMenu());
+}
+export default loadMenu;

@@ -30,6 +30,7 @@ header {
   flex-direction: column;
   border-bottom: 2px solid white;
 }
+
 .header-title {
   font-family: var(--shantell);
   font-size: 5rem;
@@ -37,16 +38,25 @@ header {
   text-align: center;
   padding: 0.6rem;
 }
-.header-nav-list {
-  list-style: none;
+
+.header-buttons {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding: 1rem 0;
+  padding: 1rem;
 }
-.header-nav-list li {
+
+.header-buttons button {
+  background: none;
+  border-color: transparent;
+  color: inherit;
+  cursor: pointer;
   font-size: 1.5rem;
   font-weight: 500;
+  padding: 1rem;
+}
+button.active {
+  border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 /* Main Section */
@@ -62,6 +72,7 @@ main {
   text-align: center;
   padding: 2rem;
 }
+
 .home-welcome {
   font-family: var(--shantell);
   font-size: 4rem;
@@ -123,6 +134,7 @@ main {
   background-color: rgba(255, 255, 255, 0.144);
   cursor: pointer;
 }
+
 .item-name div {
   font-size: 1rem;
   margin-top: 0.5rem;
@@ -136,6 +148,7 @@ main {
   margin: 0 auto;
   padding: 2rem;
 }
+
 .contact-title {
   font-family: var(--shantell);
   font-size: 3.5rem;
