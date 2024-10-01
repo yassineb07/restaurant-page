@@ -18,12 +18,16 @@
   },
   "homepage": "https://github.com/yassineb07/restaurant-page#readme",
   "devDependencies": {
+    "css-loader": "^7.1.2",
     "eslint": "^8.34.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.27.5",
+    "html-webpack-plugin": "^5.6.0",
     "prettier": "^2.8.4",
+    "style-loader": "^4.0.0",
     "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1"
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^5.1.0"
   }
 }
